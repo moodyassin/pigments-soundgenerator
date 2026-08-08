@@ -1,0 +1,2772 @@
+{
+  "schema_version": "1.0.0",
+  "source_database": "pigments7_master_database_v1_6.json",
+  "source_database_revision": "pgtx_import_001",
+  "mappings": [
+    {
+      "control_id": "analog.modulator.crossmod_source",
+      "targets": [
+        {
+          "parameter_id": "Engine1_CrossModSource",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_CrossModSource",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "Exact generic CrossModSource IDs exist for both engine slots; selector values still need calibration.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.modulator.source_combination",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_ModMix",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_ModMix",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.noise.color",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_NoiseType",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_NoiseType",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.noise.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_NoiseGain",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_NoiseGain",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc1Range",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc1Range",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.fm_amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_FMGain",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_FMGain",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "ambiguous_shared_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "control_relationship_needs_diff",
+      "mapping_notes": "The archive exposes one VA3Osc_FMGain plus Osc1FM/Osc2FM switches; a one-control preset pair is needed to confirm the visible amount relationship.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.fm_switch",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc1FM",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc1FM",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.sync",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_HardSync",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_HardSync",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc1Volume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc1Volume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.wave_type",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc1Wave",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc1Wave",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "wave_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_1.width",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc1PulseWidth",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc1PulseWidth",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2Range",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2Range",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2Detune",
+          "role": "semitone_value",
+          "engine_slot": "engine_1",
+          "condition": "Fine display mode is semitones"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2Detune",
+          "role": "semitone_value",
+          "engine_slot": "engine_2",
+          "condition": "Fine display mode is semitones"
+        },
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2FreqOffset",
+          "role": "hertz_value",
+          "engine_slot": "engine_1",
+          "condition": "Fine display mode is hertz"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2FreqOffset",
+          "role": "hertz_value",
+          "engine_slot": "engine_2",
+          "condition": "Fine display mode is hertz"
+        },
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2FreqOffsetMode",
+          "role": "mode",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2FreqOffsetMode",
+          "role": "mode",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "dual_mode_requires_controlled_diff",
+      "mapping_notes": "The visible dual-unit Fine control appears to use Detune, FreqOffset and FreqOffsetMode.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.fm_amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_FMGain",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_FMGain",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "ambiguous_shared_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "control_relationship_needs_diff",
+      "mapping_notes": "The archive exposes one VA3Osc_FMGain plus Osc1FM/Osc2FM switches; a one-control preset pair is needed to confirm the visible amount relationship.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.fm_switch",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2FM",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2FM",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.key_follower",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2Key",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2Key",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2Volume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2Volume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.wave_type",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2Wave",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2Wave",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "wave_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_2.width",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc2PulseWidth",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc2PulseWidth",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_3.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3Range",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3Range",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_3.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3Detune",
+          "role": "semitone_value",
+          "engine_slot": "engine_1",
+          "condition": "Fine display mode is semitones"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3Detune",
+          "role": "semitone_value",
+          "engine_slot": "engine_2",
+          "condition": "Fine display mode is semitones"
+        },
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3FreqOffset",
+          "role": "hertz_value",
+          "engine_slot": "engine_1",
+          "condition": "Fine display mode is hertz"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3FreqOffset",
+          "role": "hertz_value",
+          "engine_slot": "engine_2",
+          "condition": "Fine display mode is hertz"
+        },
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3FreqOffsetMode",
+          "role": "mode",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3FreqOffsetMode",
+          "role": "mode",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "dual_mode_requires_controlled_diff",
+      "mapping_notes": "The visible dual-unit Fine control appears to use Detune, FreqOffset and FreqOffsetMode.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_3.key_follower",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3Key",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3Key",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_3.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3Volume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3Volume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_3.wave_type",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3Wave",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3Wave",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "wave_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.oscillator_3.width",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Osc3PulseWidth",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Osc3PulseWidth",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.tune.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_CoarseTune",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_CoarseTune",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.tune.drift",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_PitchDriftST",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_PitchDriftST",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.tune.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_FineTune",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_FineTune",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.tune.keyboard_tracking",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_KeyTrack",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_KeyTrack",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.tune.q",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Quantize",
+          "role": "enabled",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Quantize",
+          "role": "enabled",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "Engine1_VA3Osc_Scale",
+          "role": "scale_or_root",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Scale",
+          "role": "scale_or_root",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "pitch_class_mapping_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.unison.detune",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Unison_Detune",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Unison_Detune",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.unison.stereo",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_Unison_Stereo",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Unison_Stereo",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "analog.unison.voices",
+      "targets": [
+        {
+          "parameter_id": "Engine1_VA3Osc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "Engine1_VA3Osc_Unison_Voices",
+          "role": "value",
+          "engine_slot": "engine_1",
+          "legacy": true
+        },
+        {
+          "parameter_id": "Engine2_VA3Osc_Unison_Voices",
+          "role": "value",
+          "engine_slot": "engine_2",
+          "legacy": true
+        }
+      ],
+      "mapping_status": "high_confidence_with_legacy_id",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "stepped_voice_curve_needs_calibration",
+      "mapping_notes": "Both current and legacy voice-count spellings occur in the imported archives.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "common.engine.enabled",
+      "targets": [
+        {
+          "parameter_id": "Engine1_Bypass",
+          "role": "value",
+          "engine_slot": "engine_1",
+          "transform": "invert_boolean"
+        },
+        {
+          "parameter_id": "Engine2_Bypass",
+          "role": "value",
+          "engine_slot": "engine_2",
+          "transform": "invert_boolean"
+        }
+      ],
+      "mapping_status": "confirmed_inverse_semantics",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "inverted_boolean",
+      "mapping_notes": "Pigments stores Bypass; the visible Power state has inverse semantics. The current compiler does not expose an inverted UI alias.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "common.engine_output.filter_mix",
+      "targets": [
+        {
+          "parameter_id": "FilterMix_Engine1FilterMix",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "FilterMix_Engine2FilterMix",
+          "role": "value",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "FilterMix_UtilitySOFilterMix",
+          "role": "utility_oscillator",
+          "engine_slot": "utility_engine"
+        },
+        {
+          "parameter_id": "FilterMix_UtilityN1FilterMix",
+          "role": "utility_noise_1",
+          "engine_slot": "utility_engine"
+        },
+        {
+          "parameter_id": "FilterMix_UtilityN2FilterMix",
+          "role": "utility_noise_2",
+          "engine_slot": "utility_engine"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_linear",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "common.engine_output.volume",
+      "targets": [
+        {
+          "parameter_id": "FilterMix_Engine1Volume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "FilterMix_Engine2Volume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "FilterMix_UtilitySOVolume",
+          "role": "utility_oscillator",
+          "engine_slot": "utility_engine"
+        },
+        {
+          "parameter_id": "FilterMix_UtilityN1Volume",
+          "role": "utility_noise_1",
+          "engine_slot": "utility_engine"
+        },
+        {
+          "parameter_id": "FilterMix_UtilityN2Volume",
+          "role": "utility_noise_2",
+          "engine_slot": "utility_engine"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_linear_approximation",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.freq_ring_mod.amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_FMAmount",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_FMAmount",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.freq_ring_mod.type",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_FMType",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_FMType",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.modulator.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_ModOscFine",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_ModOscFine",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.modulator.source",
+      "targets": [
+        {
+          "parameter_id": "Engine1_CrossModSource",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_CrossModSource",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.modulator.tune",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_ModOscRatio",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_ModOscRatio",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_ratio_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "ratio_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.modulator.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_ModOscVolume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_ModOscVolume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.modulator.wave",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_ModOscWf",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_ModOscWf",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "wave_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.phase_mod.amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_PMAmount",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_PMAmount",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.phase_mod.phase",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Phase",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Phase",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_to_degrees",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.phase_mod.retrig",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Sync",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Sync",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "retrig_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.phase_transform.amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_PhaseDist",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_PhaseDist",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.phase_transform.mod_amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_PDAmount",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_PDAmount",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.phase_transform.type",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_PDSourceIndex",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_PDSourceIndex",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "phase_transform_enum_values_need_controlled_diff",
+      "mapping_notes": "Observed values are discrete and align with the selector role; a complete option calibration is still required.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.tune.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Coarse",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Coarse",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.tune.drift",
+      "targets": [],
+      "mapping_status": "unmapped_no_wavetable_specific_id",
+      "confidence": "low",
+      "automatic_edit": false,
+      "conversion_status": "unknown",
+      "mapping_notes": "The imported inventory exposes Analog PitchDriftST but no clear WTOsc drift ID.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.tune.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Fine",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Fine",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.tune.keyboard_tracking",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_KeyTrack",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_KeyTrack",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.tune.q",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Quantize",
+          "role": "enabled",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Quantize",
+          "role": "enabled",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "Engine1_WTOsc_Scale",
+          "role": "scale",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Scale",
+          "role": "scale",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "Engine1_WTOsc_Scales_RootNote",
+          "role": "root_note",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Scales_RootNote",
+          "role": "root_note",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "pitch_class_mapping_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.unison.detune",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_UnisonDetune",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_UnisonDetune",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.unison.phase",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Unison_PhaseControl",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Unison_PhaseControl",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.unison.stereo",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.unison.voices",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_stepped_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "voice_count_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wave.morph",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Morph",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Morph",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wave.position",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_FrameIndex",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_FrameIndex",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wave.view_mode",
+      "targets": [],
+      "mapping_status": "ui_state_not_confirmed_in_preset",
+      "confidence": "low",
+      "automatic_edit": false,
+      "conversion_status": "not_a_safe_preset_parameter",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wave.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_MainVolume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_MainVolume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wave.wavetable_select",
+      "targets": [],
+      "mapping_status": "serialized_object_mapping_required",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "asset_object_not_numeric",
+      "mapping_notes": "Wavetable choice is represented in the serialized object layer, not as a safely calibrated numeric selector.",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wavefolding.fold",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_Fold",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_Fold",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wavefolding.mod_amount",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_FoldAmount",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_FoldAmount",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "wavetable.wavefolding.shape",
+      "targets": [
+        {
+          "parameter_id": "Engine1_WTOsc_FoldSourceIndex",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_WTOsc_FoldSourceIndex",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "fold_shape_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.tune.keyboard_tracking",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_KeyTrack",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_KeyTrack",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.tune.q",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Quantize",
+          "role": "enabled",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Quantize",
+          "role": "enabled",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Scale",
+          "role": "scale_or_root",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Scale",
+          "role": "scale_or_root",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "pitch_class_mapping_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.tune.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Coarse",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Coarse",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_linear_approximation",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.tune.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Fine",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Fine",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_linear_approximation",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.tune.filter",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Filter",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Filter",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_bipolar",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Effect Type",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Effect Type",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "known_enum",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.enabled",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Enable Effect",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Enable Effect",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.bitcrush.decimate",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_BitCrushDecimate",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_BitCrushDecimate",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.bitcrush.decimate_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_BitCrushMode",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_BitCrushMode",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "binary_enum_direction_needs_audition",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.bitcrush.bit_depth",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_BitCrushBitDepth",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_BitCrushBitDepth",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "reverse_linear_approximation",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.bitcrush.key_track",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_BitCrushPitchFollow",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_BitCrushPitchFollow",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.browser.sample_select",
+      "targets": [],
+      "mapping_status": "serialized_audio_object_mapping_required",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "asset_object_not_numeric",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.viewer.mode",
+      "targets": [],
+      "mapping_status": "ui_state_not_confirmed_in_preset",
+      "confidence": "low",
+      "automatic_edit": false,
+      "conversion_status": "not_a_safe_preset_parameter",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.viewer.timeline_ruler",
+      "targets": [],
+      "mapping_status": "display_only",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "not_a_preset_parameter",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.viewer.active_slot",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_SamplePick",
+          "role": "active_slot",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_SamplePick",
+          "role": "active_slot",
+          "engine_slot": "engine_2"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_SinglePick",
+          "role": "selection_mode",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_SinglePick",
+          "role": "selection_mode",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "candidate_requires_controlled_diff",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "slot_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.sample_grain.start",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Start",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Start",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "platform_verified",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_sample_duration",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.sample_grain.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_MainVolume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_MainVolume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.enabled",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GranularOn",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GranularOn",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "binary",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.limit",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_MaxGrains",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_MaxGrains",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_stepped_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "grain_count_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.scan",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Speed",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Speed",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.density",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GranularPhaseHelper_RateUnSynced",
+          "role": "hz",
+          "engine_slot": "engine_1",
+          "condition": "Density Mode is Hz"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GranularPhaseHelper_RateUnSynced",
+          "role": "hz",
+          "engine_slot": "engine_2",
+          "condition": "Density Mode is Hz"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GranularPhaseHelper_RateSynced",
+          "role": "synced_rate",
+          "engine_slot": "engine_1",
+          "condition": "Density Mode is tempo-synced"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GranularPhaseHelper_RateSynced",
+          "role": "synced_rate",
+          "engine_slot": "engine_2",
+          "condition": "Density Mode is tempo-synced"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GranularPhaseHelper_AllRateSynced",
+          "role": "all_synced_rate",
+          "engine_slot": "engine_1",
+          "condition": "Density Mode uses the combined synced selector"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GranularPhaseHelper_AllRateSynced",
+          "role": "all_synced_rate",
+          "engine_slot": "engine_2",
+          "condition": "Density Mode uses the combined synced selector"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "rate_curve_and_mode_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.density_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_DensityType",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_DensityType",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.shape",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_EnvelopeParam",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_EnvelopeParam",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.shape_type",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Envelope",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Envelope",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.size",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GrainSizeAbsolute",
+          "role": "absolute",
+          "engine_slot": "engine_1",
+          "condition": "Size Mode is time"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GrainSizeAbsolute",
+          "role": "absolute",
+          "engine_slot": "engine_2",
+          "condition": "Size Mode is time"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GrainSizeRatio",
+          "role": "ratio",
+          "engine_slot": "engine_1",
+          "condition": "Size Mode is ratio"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GrainSizeRatio",
+          "role": "ratio",
+          "engine_slot": "engine_2",
+          "condition": "Size Mode is ratio"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GrainSizeRatioContinuous",
+          "role": "continuous_ratio",
+          "engine_slot": "engine_1",
+          "condition": "Size Mode is continuous ratio"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GrainSizeRatioContinuous",
+          "role": "continuous_ratio",
+          "engine_slot": "engine_2",
+          "condition": "Size Mode is continuous ratio"
+        },
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_GrainSizeSynced",
+          "role": "synced",
+          "engine_slot": "engine_1",
+          "condition": "Size Mode is tempo-synced"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_GrainSizeSynced",
+          "role": "synced",
+          "engine_slot": "engine_2",
+          "condition": "Size Mode is tempo-synced"
+        }
+      ],
+      "mapping_status": "conditional_multi_parameter_candidate",
+      "confidence": "medium",
+      "automatic_edit": false,
+      "conversion_status": "size_mode_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.size_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_SizeMode",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_SizeMode",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_start",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomStart",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomStart",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_start_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomStartArrow",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomStartArrow",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_pitch",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomPitch",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomPitch",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_pitch_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomPitchArrow",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomPitchArrow",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_density",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomDensity",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomDensity",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_density_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomDensityArrow",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomDensityArrow",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.direction",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomDirection",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomDirection",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_size",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomSize",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomSize",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_size_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomSizeArrow",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomSizeArrow",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.stereo",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomPan",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomPan",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.stereo_mode",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_PanMode",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_PanMode",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.granular.random_volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RandomVolume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RandomVolume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.modulator.source",
+      "targets": [
+        {
+          "parameter_id": "Engine1_CrossModSource",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_CrossModSource",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.modulator.wave",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ModOscWf",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ModOscWf",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "wave_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.modulator.volume",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ModOscVolume",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ModOscVolume",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "display_db_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.modulator.tune",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ModOscRatio",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ModOscRatio",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_ratio_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "ratio_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.modulator.fine",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ModOscFine",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ModOscFine",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.unison.detune",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonDetune",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonDetune",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.unison.phase",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_Unison_PhaseControl",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_Unison_PhaseControl",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.unison.stereo",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.unison.voices",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_stepped_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "voice_count_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.chord.chord",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonChord",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonChord",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_enum_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "chord_enum_values_need_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.chord.stereo",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.chord.voices",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonVoices",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_stepped_candidate",
+      "confidence": "high",
+      "automatic_edit": false,
+      "conversion_status": "voice_count_curve_needs_controlled_diff",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.super.detune",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonDetune",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonDetune",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.super.mix",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonMix",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonMix",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.super.stereo",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_UnisonStereo",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.resonator.coarse",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ResonatorFcCoarse",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ResonatorFcCoarse",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "ui_semitone_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.resonator.dry_wet",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ResonatorDryWet",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ResonatorDryWet",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.resonator.inharmonicity",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ResonatorInharmonicity",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ResonatorInharmonicity",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.resonator.resonance",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_ResonatorQ",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_ResonatorQ",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.modulation.freq_mod",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_FMAmount",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_FMAmount",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    },
+    {
+      "control_id": "sample.shaper.modulation.ring_mod",
+      "targets": [
+        {
+          "parameter_id": "Engine1_SampleGranularOsc_RingModAmount",
+          "role": "value",
+          "engine_slot": "engine_1"
+        },
+        {
+          "parameter_id": "Engine2_SampleGranularOsc_RingModAmount",
+          "role": "value",
+          "engine_slot": "engine_2"
+        }
+      ],
+      "mapping_status": "high_confidence_name_match",
+      "confidence": "high",
+      "automatic_edit": true,
+      "conversion_status": "normalized_curve_unverified",
+      "mapping_notes": "",
+      "mapping_aliases": []
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "patch_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 800
+    },
+    "macro_names": {
+      "type": "object",
+      "properties": {
+        "macro1": { "type": "string", "maxLength": 16 },
+        "macro2": { "type": "string", "maxLength": 16 },
+        "macro3": { "type": "string", "maxLength": 16 },
+        "macro4": { "type": "string", "maxLength": 16 }
+      },
+      "required": ["macro1", "macro2", "macro3", "macro4"],
+      "additionalProperties": false
+    },
+    "changes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 220,
+      "items": {
+        "type": "object",
+        "properties": {
+          "parameter_id": { "type": "string", "minLength": 1, "maxLength": 240 },
+          "operation": { "type": "string", "enum": ["set", "add", "multiply", "toggle"] },
+          "value": { "type": "string", "minLength": 1, "maxLength": 80 },
+          "unit": { "type": "string", "enum": ["normalized", "raw", "percent", "hz", "db", "semitones", "bits", "enum", "boolean"] },
+          "reason": { "type": "string", "maxLength": 300 },
+          "allow_add": { "type": "boolean" }
+        },
+        "required": ["parameter_id", "operation", "value", "unit", "reason", "allow_add"],
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "maxItems": 20,
+      "items": { "type": "string", "maxLength": 300 }
+    }
+  },
+  "required": ["patch_name", "summary", "macro_names", "changes", "warnings"],
+  "additionalProperties": false
+}

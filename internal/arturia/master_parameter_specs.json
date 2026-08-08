@@ -1,0 +1,2689 @@
+{
+  "schema_version": "1.0.0",
+  "specs": [
+    {
+      "id": "Engine1_SampleGranularOsc_BitCrushBitDepth",
+      "friendly": "Engine 1 Bit Depth",
+      "aliases": [
+        "sample.shaper.bitcrush.bit_depth",
+        "Bit Depth"
+      ],
+      "unit": "bits",
+      "min": 16.0,
+      "max": 1.5,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The user supplied the knob direction as 16.0 to 1.50; numeric minimum and maximum are stored in ascending order. Mapping status: platform_verified; conversion: reverse_linear_approximation.",
+      "source_control_id": "sample.shaper.bitcrush.bit_depth",
+      "mapping_status": "platform_verified",
+      "conversion_status": "reverse_linear_approximation"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_BitCrushDecimate",
+      "friendly": "Engine 1 Decimate",
+      "aliases": [
+        "sample.shaper.bitcrush.decimate",
+        "Decimate"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Reduces the sampling rate of the processed sample. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.bitcrush.decimate",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_BitCrushPitchFollow",
+      "friendly": "Engine 1 Decimate Key Tracking",
+      "aliases": [
+        "sample.shaper.bitcrush.key_track",
+        "Key Track",
+        "Decimate Key Tracking",
+        "Pitch Follow"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "When enabled, Decimate follows keyboard pitch. Mapping status: platform_verified; conversion: binary.",
+      "source_control_id": "sample.shaper.bitcrush.key_track",
+      "mapping_status": "platform_verified",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Coarse",
+      "friendly": "Engine 1 Coarse",
+      "aliases": [
+        "sample.tune.coarse",
+        "Coarse"
+      ],
+      "unit": "semitones",
+      "min": -36.0,
+      "max": 36.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.tune.coarse in the Pigments 7 master database. Mapping status: platform_verified; conversion: ui_semitone_linear_approximation.",
+      "source_control_id": "sample.tune.coarse",
+      "mapping_status": "platform_verified",
+      "conversion_status": "ui_semitone_linear_approximation"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Effect Type",
+      "friendly": "Sample Engine 1 shaper mode",
+      "aliases": [
+        "sample engine 1 shaper mode",
+        "sample.shaper.mode"
+      ],
+      "unit": "enum",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {
+        "unison": "0",
+        "chord": "0.2",
+        "super": "0.4",
+        "resonator": "0.6",
+        "bit crush": "0.8",
+        "bitcrush": "0.8",
+        "modulation": "1"
+      },
+      "description": "Selects Unison, Chord, Super, Resonator, Bit Crush, or Modulation.",
+      "source_control_id": "sample.shaper.mode",
+      "mapping_status": "platform_verified",
+      "conversion_status": "known_enum"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Enable Effect",
+      "friendly": "Engine 1 Sample Shaper Enabled",
+      "aliases": [
+        "sample.shaper.enabled",
+        "Power",
+        "Sample Shaper Enabled",
+        "Bitcrush on/off switch"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Enables or bypasses the currently selected Sample Engine Shaper mode. Mapping status: platform_verified; conversion: binary.",
+      "source_control_id": "sample.shaper.enabled",
+      "mapping_status": "platform_verified",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_EnvelopeParam",
+      "friendly": "Engine 1 Grain Shape",
+      "aliases": [
+        "sample.granular.shape",
+        "Shape",
+        "Grain Shape"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Shapes the grain envelope. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.shape",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_FMAmount",
+      "friendly": "Engine 1 Frequency Modulation Amount",
+      "aliases": [
+        "sample.shaper.modulation.freq_mod",
+        "Freq Mod",
+        "Frequency Modulation Amount",
+        "freqmod knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.modulation.freq_mod in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.modulation.freq_mod",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Filter",
+      "friendly": "Engine 1 Sample Filter",
+      "aliases": [
+        "sample.tune.filter",
+        "Filter",
+        "Sample Filter"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Pre-processes the sample before the main Pigments filters. No numerical cutoff mapping has been supplied. Mapping status: platform_verified; conversion: normalized_bipolar.",
+      "source_control_id": "sample.tune.filter",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_bipolar"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Fine",
+      "friendly": "Engine 1 Fine",
+      "aliases": [
+        "sample.tune.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.tune.fine in the Pigments 7 master database. Mapping status: platform_verified; conversion: ui_semitone_linear_approximation.",
+      "source_control_id": "sample.tune.fine",
+      "mapping_status": "platform_verified",
+      "conversion_status": "ui_semitone_linear_approximation"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_GranularOn",
+      "friendly": "Engine 1 Granular Enabled",
+      "aliases": [
+        "sample.granular.enabled",
+        "Power",
+        "Granular Enabled"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Granular mode on/off. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "sample.granular.enabled",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_KeyTrack",
+      "friendly": "Engine 1 Keyboard Tracking",
+      "aliases": [
+        "sample.tune.keyboard_tracking",
+        "Keyboard Tracking"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Located in the Tune settings pop-up. Mapping status: platform_verified; conversion: binary.",
+      "source_control_id": "sample.tune.keyboard_tracking",
+      "mapping_status": "platform_verified",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_MainVolume",
+      "friendly": "Engine 1 Volume",
+      "aliases": [
+        "sample.sample_grain.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Sets sample/grain volume. Numerical range has not yet been supplied. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "sample.sample_grain.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_ModOscFine",
+      "friendly": "Engine 1 Fine",
+      "aliases": [
+        "sample.modulator.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Inherited from the established Wavetable Modulator data. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "sample.modulator.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_ModOscVolume",
+      "friendly": "Engine 1 Volume",
+      "aliases": [
+        "sample.modulator.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Inherited from the user-supplied Wavetable Modulator range under the documented equivalence. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "sample.modulator.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomDensity",
+      "friendly": "Engine 1 Random Density",
+      "aliases": [
+        "sample.granular.random_density",
+        "Density",
+        "Random Density"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain density. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_density",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomDirection",
+      "friendly": "Engine 1 Playback Direction",
+      "aliases": [
+        "sample.granular.direction",
+        "Direction",
+        "Playback Direction"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Balances backward and forward grain playback. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.direction",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomPan",
+      "friendly": "Engine 1 Stereo Randomization",
+      "aliases": [
+        "sample.granular.stereo",
+        "Stereo",
+        "Stereo Randomization"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Stereo randomization amount. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.stereo",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomPitch",
+      "friendly": "Engine 1 Random Pitch",
+      "aliases": [
+        "sample.granular.random_pitch",
+        "Pitch",
+        "Random Pitch"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain pitch. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_pitch",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomSize",
+      "friendly": "Engine 1 Random Size",
+      "aliases": [
+        "sample.granular.random_size",
+        "Size",
+        "Random Size"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain size. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_size",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomStart",
+      "friendly": "Engine 1 Random Start",
+      "aliases": [
+        "sample.granular.random_start",
+        "Start",
+        "Random Start"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain position. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_start",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RandomVolume",
+      "friendly": "Engine 1 Random Volume",
+      "aliases": [
+        "sample.granular.random_volume",
+        "Volume",
+        "Random Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain volume. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_ResonatorDryWet",
+      "friendly": "Engine 1 Resonator Dry/Wet",
+      "aliases": [
+        "sample.shaper.resonator.dry_wet",
+        "Dry/Wet",
+        "Resonator Dry/Wet"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.dry_wet in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.dry_wet",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_ResonatorFcCoarse",
+      "friendly": "Engine 1 Resonator Coarse",
+      "aliases": [
+        "sample.shaper.resonator.coarse",
+        "Coarse",
+        "Resonator Coarse"
+      ],
+      "unit": "semitones",
+      "min": -36.0,
+      "max": 36.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.coarse in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_ResonatorInharmonicity",
+      "friendly": "Engine 1 Resonator Inharmonicity",
+      "aliases": [
+        "sample.shaper.resonator.inharmonicity",
+        "Inharmonicity",
+        "Resonator Inharmonicity"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.inharmonicity in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.inharmonicity",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_ResonatorQ",
+      "friendly": "Engine 1 Resonator Resonance",
+      "aliases": [
+        "sample.shaper.resonator.resonance",
+        "Resonance",
+        "Resonator Resonance"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.resonance in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.resonance",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_RingModAmount",
+      "friendly": "Engine 1 Ring Modulation Amount",
+      "aliases": [
+        "sample.shaper.modulation.ring_mod",
+        "Ring Mod",
+        "Ring Modulation Amount",
+        "ring modulation"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.modulation.ring_mod in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.modulation.ring_mod",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Speed",
+      "friendly": "Engine 1 Scan",
+      "aliases": [
+        "sample.granular.scan",
+        "Scan"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Grain-stream scan control. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.scan",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Start",
+      "friendly": "Engine 1 Start",
+      "aliases": [
+        "sample.sample_grain.start",
+        "Start",
+        "Sample Start knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Start is relative to Trim Start and Trim End, so its absolute time span changes with the active sample and trim. Mapping status: platform_verified; conversion: normalized_sample_duration.",
+      "source_control_id": "sample.sample_grain.start",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_sample_duration"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_UnisonDetune",
+      "friendly": "Engine 1 Unison Detune",
+      "aliases": [
+        "sample.shaper.unison.detune",
+        "Detune",
+        "Unison Detune"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.unison.detune in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.unison.detune",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_UnisonMix",
+      "friendly": "Engine 1 Super Mix",
+      "aliases": [
+        "sample.shaper.super.mix",
+        "Mix",
+        "Super Mix"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.super.mix in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.super.mix",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_UnisonStereo",
+      "friendly": "Engine 1 Unison Stereo",
+      "aliases": [
+        "sample.shaper.unison.stereo",
+        "Stereo",
+        "Unison Stereo"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.unison.stereo in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.unison.stereo",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_SampleGranularOsc_Unison_PhaseControl",
+      "friendly": "Engine 1 Unison Phase",
+      "aliases": [
+        "sample.shaper.unison.phase",
+        "Phase",
+        "Unison Phase"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.unison.phase in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.unison.phase",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_CoarseTune",
+      "friendly": "Engine 1 Tune Coarse",
+      "aliases": [
+        "analog.tune.coarse",
+        "Tune Coarse"
+      ],
+      "unit": "semitones",
+      "min": -60.0,
+      "max": 60.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.coarse in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.tune.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_FineTune",
+      "friendly": "Engine 1 Fine Tune",
+      "aliases": [
+        "analog.tune.fine",
+        "Fine Tune"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.fine in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.tune.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_HardSync",
+      "friendly": "Engine 1 Sync",
+      "aliases": [
+        "analog.oscillator_1.sync",
+        "Sync"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.sync in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_1.sync",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_VA3Osc_KeyTrack",
+      "friendly": "Engine 1 Keyboard Tracking",
+      "aliases": [
+        "analog.tune.keyboard_tracking",
+        "Keyboard Tracking"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.keyboard_tracking in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.tune.keyboard_tracking",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_VA3Osc_ModMix",
+      "friendly": "Engine 1 Oscillator 3 / Noise Source Blend",
+      "aliases": [
+        "analog.modulator.source_combination",
+        "Source",
+        "Oscillator 3 / Noise Source Blend",
+        "Modulator Source Combination"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Modulator source blend. Screenshot verifies 0%=OSC3 and 100%=NOISE. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.modulator.source_combination",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_NoiseGain",
+      "friendly": "Engine 1 Noise Volume",
+      "aliases": [
+        "analog.noise.volume",
+        "Noise Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.noise.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.noise.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_NoiseType",
+      "friendly": "Engine 1 Noise Color",
+      "aliases": [
+        "analog.noise.color",
+        "Color",
+        "Noise Color",
+        "Noise knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Continuous Red-to-White-to-Blue noise-color control; screenshot verifies label order. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.noise.color",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc1FM",
+      "friendly": "Engine 1 FM",
+      "aliases": [
+        "analog.oscillator_1.fm_switch",
+        "FM"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.fm_switch in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_1.fm_switch",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc1PulseWidth",
+      "friendly": "Engine 1 Width",
+      "aliases": [
+        "analog.oscillator_1.width",
+        "Width"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.width in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.oscillator_1.width",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc1Range",
+      "friendly": "Engine 1 Coarse",
+      "aliases": [
+        "analog.oscillator_1.coarse",
+        "Coarse"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Unit was not explicitly supplied. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.oscillator_1.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc1Volume",
+      "friendly": "Engine 1 Volume",
+      "aliases": [
+        "analog.oscillator_1.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.oscillator_1.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc2FM",
+      "friendly": "Engine 1 FM",
+      "aliases": [
+        "analog.oscillator_2.fm_switch",
+        "FM"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.fm_switch in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_2.fm_switch",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc2Key",
+      "friendly": "Engine 1 Key Follower",
+      "aliases": [
+        "analog.oscillator_2.key_follower",
+        "Key Follower"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.key_follower in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_2.key_follower",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc2PulseWidth",
+      "friendly": "Engine 1 Width",
+      "aliases": [
+        "analog.oscillator_2.width",
+        "Width"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.width in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.oscillator_2.width",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc2Range",
+      "friendly": "Engine 1 Coarse",
+      "aliases": [
+        "analog.oscillator_2.coarse",
+        "Coarse"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Unit was not explicitly supplied. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.oscillator_2.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc2Volume",
+      "friendly": "Engine 1 Volume",
+      "aliases": [
+        "analog.oscillator_2.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.oscillator_2.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc3Key",
+      "friendly": "Engine 1 Key Follower",
+      "aliases": [
+        "analog.oscillator_3.key_follower",
+        "Key Follower"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_3.key_follower in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_3.key_follower",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc3PulseWidth",
+      "friendly": "Engine 1 Width",
+      "aliases": [
+        "analog.oscillator_3.width",
+        "Width"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_3.width in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.oscillator_3.width",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc3Range",
+      "friendly": "Engine 1 Coarse",
+      "aliases": [
+        "analog.oscillator_3.coarse",
+        "Coarse"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Unit was not explicitly supplied. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.oscillator_3.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Osc3Volume",
+      "friendly": "Engine 1 Volume",
+      "aliases": [
+        "analog.oscillator_3.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_3.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.oscillator_3.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_PitchDriftST",
+      "friendly": "Engine 1 Drift",
+      "aliases": [
+        "analog.tune.drift",
+        "Drift"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.drift in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.tune.drift",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Unison_Detune",
+      "friendly": "Engine 1 Detune",
+      "aliases": [
+        "analog.unison.detune",
+        "Detune"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.unison.detune in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.unison.detune",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_VA3Osc_Unison_Stereo",
+      "friendly": "Engine 1 Stereo",
+      "aliases": [
+        "analog.unison.stereo",
+        "Stereo"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.unison.stereo in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.unison.stereo",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_Coarse",
+      "friendly": "Engine 1 Coarse",
+      "aliases": [
+        "wavetable.tune.coarse",
+        "Coarse"
+      ],
+      "unit": "semitones",
+      "min": -60.0,
+      "max": 60.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied shared Tune values; label is screenshot-verified. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "wavetable.tune.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_FMAmount",
+      "friendly": "Engine 1 Freq / Ring Mod Amount",
+      "aliases": [
+        "wavetable.freq_ring_mod.amount",
+        "Freq Mod",
+        "Freq / Ring Mod Amount",
+        "Freqmod knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The visible label reflects the currently selected FM mode; its function becomes ring-mod amount when Ring Mod is selected. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.freq_ring_mod.amount",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_Fine",
+      "friendly": "Engine 1 Fine",
+      "aliases": [
+        "wavetable.tune.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied shared Tune values; label is screenshot-verified. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "wavetable.tune.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_Fold",
+      "friendly": "Engine 1 Fold",
+      "aliases": [
+        "wavetable.wavefolding.fold",
+        "Fold",
+        "wavefodling fold knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.wavefolding.fold in the Pigments 7 master database. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.wavefolding.fold",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_FoldAmount",
+      "friendly": "Engine 1 Fold Mod",
+      "aliases": [
+        "wavetable.wavefolding.mod_amount",
+        "Fold Mod"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.wavefolding.mod_amount in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.wavefolding.mod_amount",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_FrameIndex",
+      "friendly": "Engine 1 Position",
+      "aliases": [
+        "wavetable.wave.position",
+        "Position"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range supplied by the user on 2026-07-27. The control label and presence were previously screenshot-verified. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.wave.position",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_KeyTrack",
+      "friendly": "Engine 1 Keyboard Tracking",
+      "aliases": [
+        "wavetable.tune.keyboard_tracking",
+        "Keyboard Tracking"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The Tune settings button is visible; this hidden setting is inherited provisionally from the supplied Tune data and awaits an open-settings screenshot. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "wavetable.tune.keyboard_tracking",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_WTOsc_MainVolume",
+      "friendly": "Engine 1 Wavetable Volume",
+      "aliases": [
+        "wavetable.wave.volume",
+        "Volume",
+        "Wavetable Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The user wrote '70.0 to 0.00 dB'. The database stores '-70.0 to 0.00 dB', interpreting the omitted minus sign as a typo. The exact original wording is preserved in the source payload. Mapping status: platform_verified; conversion: display_db_curve_unverified.",
+      "source_control_id": "wavetable.wave.volume",
+      "mapping_status": "platform_verified",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_ModOscFine",
+      "friendly": "Engine 1 Fine",
+      "aliases": [
+        "wavetable.modulator.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.modulator.fine in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "wavetable.modulator.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_ModOscVolume",
+      "friendly": "Engine 1 Volume",
+      "aliases": [
+        "wavetable.modulator.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.modulator.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "wavetable.modulator.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_Morph",
+      "friendly": "Engine 1 Morph",
+      "aliases": [
+        "wavetable.wave.morph",
+        "morph",
+        "Morph"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Exact capitalization preserved from the visible button. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "wavetable.wave.morph",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine1_WTOsc_PDAmount",
+      "friendly": "Engine 1 Phase Transform Mod Amount",
+      "aliases": [
+        "wavetable.phase_transform.mod_amount",
+        "PW Mod",
+        "Phase Transform Mod Amount",
+        "phase transform PW Mod knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Current screenshot label reflects the selected Pulse Width transform. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.phase_transform.mod_amount",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_PMAmount",
+      "friendly": "Engine 1 Phase Mod",
+      "aliases": [
+        "wavetable.phase_mod.amount",
+        "Phase Mod"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.phase_mod.amount in the Pigments 7 master database. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.phase_mod.amount",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_Phase",
+      "friendly": "Engine 1 Phase",
+      "aliases": [
+        "wavetable.phase_mod.phase",
+        "Phase"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.phase_mod.phase in the Pigments 7 master database. Mapping status: platform_verified; conversion: normalized_to_degrees.",
+      "source_control_id": "wavetable.phase_mod.phase",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_to_degrees"
+    },
+    {
+      "id": "Engine1_WTOsc_PhaseDist",
+      "friendly": "Engine 1 Phase Transform Amount",
+      "aliases": [
+        "wavetable.phase_transform.amount",
+        "Pulse Width",
+        "Phase Transform Amount",
+        "pulse width knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Current screenshot label reflects the selected Pulse Width transform. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.phase_transform.amount",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_UnisonDetune",
+      "friendly": "Engine 1 Detune",
+      "aliases": [
+        "wavetable.unison.detune",
+        "Detune"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied Unison values. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.unison.detune",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_UnisonStereo",
+      "friendly": "Engine 1 Stereo",
+      "aliases": [
+        "wavetable.unison.stereo",
+        "Stereo"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied Unison values. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.unison.stereo",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine1_WTOsc_Unison_PhaseControl",
+      "friendly": "Engine 1 Phase",
+      "aliases": [
+        "wavetable.unison.phase",
+        "Phase"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range supplied by the user on 2026-07-27. The control label and presence were previously screenshot-verified. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.unison.phase",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_BitCrushBitDepth",
+      "friendly": "Engine 2 Bit Depth",
+      "aliases": [
+        "sample.shaper.bitcrush.bit_depth",
+        "Bit Depth"
+      ],
+      "unit": "bits",
+      "min": 16.0,
+      "max": 1.5,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The user supplied the knob direction as 16.0 to 1.50; numeric minimum and maximum are stored in ascending order. Mapping status: platform_verified; conversion: reverse_linear_approximation.",
+      "source_control_id": "sample.shaper.bitcrush.bit_depth",
+      "mapping_status": "platform_verified",
+      "conversion_status": "reverse_linear_approximation"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_BitCrushDecimate",
+      "friendly": "Engine 2 Decimate",
+      "aliases": [
+        "sample.shaper.bitcrush.decimate",
+        "Decimate"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Reduces the sampling rate of the processed sample. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.bitcrush.decimate",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_BitCrushPitchFollow",
+      "friendly": "Engine 2 Decimate Key Tracking",
+      "aliases": [
+        "sample.shaper.bitcrush.key_track",
+        "Key Track",
+        "Decimate Key Tracking",
+        "Pitch Follow"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "When enabled, Decimate follows keyboard pitch. Mapping status: platform_verified; conversion: binary.",
+      "source_control_id": "sample.shaper.bitcrush.key_track",
+      "mapping_status": "platform_verified",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Coarse",
+      "friendly": "Engine 2 Coarse",
+      "aliases": [
+        "sample.tune.coarse",
+        "Coarse"
+      ],
+      "unit": "semitones",
+      "min": -36.0,
+      "max": 36.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.tune.coarse in the Pigments 7 master database. Mapping status: platform_verified; conversion: ui_semitone_linear_approximation.",
+      "source_control_id": "sample.tune.coarse",
+      "mapping_status": "platform_verified",
+      "conversion_status": "ui_semitone_linear_approximation"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Effect Type",
+      "friendly": "Sample Engine 2 shaper mode",
+      "aliases": [
+        "sample engine 2 shaper mode",
+        "sample.shaper.mode"
+      ],
+      "unit": "enum",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {
+        "unison": "0",
+        "chord": "0.2",
+        "super": "0.4",
+        "resonator": "0.6",
+        "bit crush": "0.8",
+        "bitcrush": "0.8",
+        "modulation": "1"
+      },
+      "description": "Selects Unison, Chord, Super, Resonator, Bit Crush, or Modulation.",
+      "source_control_id": "sample.shaper.mode",
+      "mapping_status": "platform_verified",
+      "conversion_status": "known_enum"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Enable Effect",
+      "friendly": "Engine 2 Sample Shaper Enabled",
+      "aliases": [
+        "sample.shaper.enabled",
+        "Power",
+        "Sample Shaper Enabled",
+        "Bitcrush on/off switch"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Enables or bypasses the currently selected Sample Engine Shaper mode. Mapping status: platform_verified; conversion: binary.",
+      "source_control_id": "sample.shaper.enabled",
+      "mapping_status": "platform_verified",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_EnvelopeParam",
+      "friendly": "Engine 2 Grain Shape",
+      "aliases": [
+        "sample.granular.shape",
+        "Shape",
+        "Grain Shape"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Shapes the grain envelope. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.shape",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_FMAmount",
+      "friendly": "Engine 2 Frequency Modulation Amount",
+      "aliases": [
+        "sample.shaper.modulation.freq_mod",
+        "Freq Mod",
+        "Frequency Modulation Amount",
+        "freqmod knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.modulation.freq_mod in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.modulation.freq_mod",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Filter",
+      "friendly": "Engine 2 Sample Filter",
+      "aliases": [
+        "sample.tune.filter",
+        "Filter",
+        "Sample Filter"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Pre-processes the sample before the main Pigments filters. No numerical cutoff mapping has been supplied. Mapping status: platform_verified; conversion: normalized_bipolar.",
+      "source_control_id": "sample.tune.filter",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_bipolar"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Fine",
+      "friendly": "Engine 2 Fine",
+      "aliases": [
+        "sample.tune.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.tune.fine in the Pigments 7 master database. Mapping status: platform_verified; conversion: ui_semitone_linear_approximation.",
+      "source_control_id": "sample.tune.fine",
+      "mapping_status": "platform_verified",
+      "conversion_status": "ui_semitone_linear_approximation"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_GranularOn",
+      "friendly": "Engine 2 Granular Enabled",
+      "aliases": [
+        "sample.granular.enabled",
+        "Power",
+        "Granular Enabled"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Granular mode on/off. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "sample.granular.enabled",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_KeyTrack",
+      "friendly": "Engine 2 Keyboard Tracking",
+      "aliases": [
+        "sample.tune.keyboard_tracking",
+        "Keyboard Tracking"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Located in the Tune settings pop-up. Mapping status: platform_verified; conversion: binary.",
+      "source_control_id": "sample.tune.keyboard_tracking",
+      "mapping_status": "platform_verified",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_MainVolume",
+      "friendly": "Engine 2 Volume",
+      "aliases": [
+        "sample.sample_grain.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Sets sample/grain volume. Numerical range has not yet been supplied. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "sample.sample_grain.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_ModOscFine",
+      "friendly": "Engine 2 Fine",
+      "aliases": [
+        "sample.modulator.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Inherited from the established Wavetable Modulator data. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "sample.modulator.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_ModOscVolume",
+      "friendly": "Engine 2 Volume",
+      "aliases": [
+        "sample.modulator.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Inherited from the user-supplied Wavetable Modulator range under the documented equivalence. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "sample.modulator.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomDensity",
+      "friendly": "Engine 2 Random Density",
+      "aliases": [
+        "sample.granular.random_density",
+        "Density",
+        "Random Density"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain density. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_density",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomDirection",
+      "friendly": "Engine 2 Playback Direction",
+      "aliases": [
+        "sample.granular.direction",
+        "Direction",
+        "Playback Direction"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Balances backward and forward grain playback. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.direction",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomPan",
+      "friendly": "Engine 2 Stereo Randomization",
+      "aliases": [
+        "sample.granular.stereo",
+        "Stereo",
+        "Stereo Randomization"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Stereo randomization amount. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.stereo",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomPitch",
+      "friendly": "Engine 2 Random Pitch",
+      "aliases": [
+        "sample.granular.random_pitch",
+        "Pitch",
+        "Random Pitch"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain pitch. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_pitch",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomSize",
+      "friendly": "Engine 2 Random Size",
+      "aliases": [
+        "sample.granular.random_size",
+        "Size",
+        "Random Size"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain size. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_size",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomStart",
+      "friendly": "Engine 2 Random Start",
+      "aliases": [
+        "sample.granular.random_start",
+        "Start",
+        "Random Start"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain position. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_start",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RandomVolume",
+      "friendly": "Engine 2 Random Volume",
+      "aliases": [
+        "sample.granular.random_volume",
+        "Volume",
+        "Random Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Randomizes grain volume. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.random_volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_ResonatorDryWet",
+      "friendly": "Engine 2 Resonator Dry/Wet",
+      "aliases": [
+        "sample.shaper.resonator.dry_wet",
+        "Dry/Wet",
+        "Resonator Dry/Wet"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.dry_wet in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.dry_wet",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_ResonatorFcCoarse",
+      "friendly": "Engine 2 Resonator Coarse",
+      "aliases": [
+        "sample.shaper.resonator.coarse",
+        "Coarse",
+        "Resonator Coarse"
+      ],
+      "unit": "semitones",
+      "min": -36.0,
+      "max": 36.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.coarse in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_ResonatorInharmonicity",
+      "friendly": "Engine 2 Resonator Inharmonicity",
+      "aliases": [
+        "sample.shaper.resonator.inharmonicity",
+        "Inharmonicity",
+        "Resonator Inharmonicity"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.inharmonicity in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.inharmonicity",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_ResonatorQ",
+      "friendly": "Engine 2 Resonator Resonance",
+      "aliases": [
+        "sample.shaper.resonator.resonance",
+        "Resonance",
+        "Resonator Resonance"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.resonator.resonance in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.resonator.resonance",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_RingModAmount",
+      "friendly": "Engine 2 Ring Modulation Amount",
+      "aliases": [
+        "sample.shaper.modulation.ring_mod",
+        "Ring Mod",
+        "Ring Modulation Amount",
+        "ring modulation"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.modulation.ring_mod in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.modulation.ring_mod",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Speed",
+      "friendly": "Engine 2 Scan",
+      "aliases": [
+        "sample.granular.scan",
+        "Scan"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Grain-stream scan control. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.granular.scan",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Start",
+      "friendly": "Engine 2 Start",
+      "aliases": [
+        "sample.sample_grain.start",
+        "Start",
+        "Sample Start knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Start is relative to Trim Start and Trim End, so its absolute time span changes with the active sample and trim. Mapping status: platform_verified; conversion: normalized_sample_duration.",
+      "source_control_id": "sample.sample_grain.start",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_sample_duration"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_UnisonDetune",
+      "friendly": "Engine 2 Unison Detune",
+      "aliases": [
+        "sample.shaper.unison.detune",
+        "Detune",
+        "Unison Detune"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.unison.detune in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.unison.detune",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_UnisonMix",
+      "friendly": "Engine 2 Super Mix",
+      "aliases": [
+        "sample.shaper.super.mix",
+        "Mix",
+        "Super Mix"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.super.mix in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.super.mix",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_UnisonStereo",
+      "friendly": "Engine 2 Unison Stereo",
+      "aliases": [
+        "sample.shaper.unison.stereo",
+        "Stereo",
+        "Unison Stereo"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.unison.stereo in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.unison.stereo",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_SampleGranularOsc_Unison_PhaseControl",
+      "friendly": "Engine 2 Unison Phase",
+      "aliases": [
+        "sample.shaper.unison.phase",
+        "Phase",
+        "Unison Phase"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from sample.shaper.unison.phase in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "sample.shaper.unison.phase",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_CoarseTune",
+      "friendly": "Engine 2 Tune Coarse",
+      "aliases": [
+        "analog.tune.coarse",
+        "Tune Coarse"
+      ],
+      "unit": "semitones",
+      "min": -60.0,
+      "max": 60.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.coarse in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.tune.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_FineTune",
+      "friendly": "Engine 2 Fine Tune",
+      "aliases": [
+        "analog.tune.fine",
+        "Fine Tune"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.fine in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.tune.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_HardSync",
+      "friendly": "Engine 2 Sync",
+      "aliases": [
+        "analog.oscillator_1.sync",
+        "Sync"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.sync in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_1.sync",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_VA3Osc_KeyTrack",
+      "friendly": "Engine 2 Keyboard Tracking",
+      "aliases": [
+        "analog.tune.keyboard_tracking",
+        "Keyboard Tracking"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.keyboard_tracking in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.tune.keyboard_tracking",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_VA3Osc_ModMix",
+      "friendly": "Engine 2 Oscillator 3 / Noise Source Blend",
+      "aliases": [
+        "analog.modulator.source_combination",
+        "Source",
+        "Oscillator 3 / Noise Source Blend",
+        "Modulator Source Combination"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Modulator source blend. Screenshot verifies 0%=OSC3 and 100%=NOISE. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.modulator.source_combination",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_NoiseGain",
+      "friendly": "Engine 2 Noise Volume",
+      "aliases": [
+        "analog.noise.volume",
+        "Noise Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.noise.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.noise.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_NoiseType",
+      "friendly": "Engine 2 Noise Color",
+      "aliases": [
+        "analog.noise.color",
+        "Color",
+        "Noise Color",
+        "Noise knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Continuous Red-to-White-to-Blue noise-color control; screenshot verifies label order. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.noise.color",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc1FM",
+      "friendly": "Engine 2 FM",
+      "aliases": [
+        "analog.oscillator_1.fm_switch",
+        "FM"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.fm_switch in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_1.fm_switch",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc1PulseWidth",
+      "friendly": "Engine 2 Width",
+      "aliases": [
+        "analog.oscillator_1.width",
+        "Width"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.width in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.oscillator_1.width",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc1Range",
+      "friendly": "Engine 2 Coarse",
+      "aliases": [
+        "analog.oscillator_1.coarse",
+        "Coarse"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Unit was not explicitly supplied. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.oscillator_1.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc1Volume",
+      "friendly": "Engine 2 Volume",
+      "aliases": [
+        "analog.oscillator_1.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_1.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.oscillator_1.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc2FM",
+      "friendly": "Engine 2 FM",
+      "aliases": [
+        "analog.oscillator_2.fm_switch",
+        "FM"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.fm_switch in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_2.fm_switch",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc2Key",
+      "friendly": "Engine 2 Key Follower",
+      "aliases": [
+        "analog.oscillator_2.key_follower",
+        "Key Follower"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.key_follower in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_2.key_follower",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc2PulseWidth",
+      "friendly": "Engine 2 Width",
+      "aliases": [
+        "analog.oscillator_2.width",
+        "Width"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.width in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.oscillator_2.width",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc2Range",
+      "friendly": "Engine 2 Coarse",
+      "aliases": [
+        "analog.oscillator_2.coarse",
+        "Coarse"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Unit was not explicitly supplied. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.oscillator_2.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc2Volume",
+      "friendly": "Engine 2 Volume",
+      "aliases": [
+        "analog.oscillator_2.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_2.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.oscillator_2.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc3Key",
+      "friendly": "Engine 2 Key Follower",
+      "aliases": [
+        "analog.oscillator_3.key_follower",
+        "Key Follower"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_3.key_follower in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "analog.oscillator_3.key_follower",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc3PulseWidth",
+      "friendly": "Engine 2 Width",
+      "aliases": [
+        "analog.oscillator_3.width",
+        "Width"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_3.width in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.oscillator_3.width",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc3Range",
+      "friendly": "Engine 2 Coarse",
+      "aliases": [
+        "analog.oscillator_3.coarse",
+        "Coarse"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Unit was not explicitly supplied. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "analog.oscillator_3.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Osc3Volume",
+      "friendly": "Engine 2 Volume",
+      "aliases": [
+        "analog.oscillator_3.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.oscillator_3.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "analog.oscillator_3.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_PitchDriftST",
+      "friendly": "Engine 2 Drift",
+      "aliases": [
+        "analog.tune.drift",
+        "Drift"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.tune.drift in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.tune.drift",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Unison_Detune",
+      "friendly": "Engine 2 Detune",
+      "aliases": [
+        "analog.unison.detune",
+        "Detune"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.unison.detune in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.unison.detune",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_VA3Osc_Unison_Stereo",
+      "friendly": "Engine 2 Stereo",
+      "aliases": [
+        "analog.unison.stereo",
+        "Stereo"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from analog.unison.stereo in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "analog.unison.stereo",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_Coarse",
+      "friendly": "Engine 2 Coarse",
+      "aliases": [
+        "wavetable.tune.coarse",
+        "Coarse"
+      ],
+      "unit": "semitones",
+      "min": -60.0,
+      "max": 60.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied shared Tune values; label is screenshot-verified. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "wavetable.tune.coarse",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_FMAmount",
+      "friendly": "Engine 2 Freq / Ring Mod Amount",
+      "aliases": [
+        "wavetable.freq_ring_mod.amount",
+        "Freq Mod",
+        "Freq / Ring Mod Amount",
+        "Freqmod knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The visible label reflects the currently selected FM mode; its function becomes ring-mod amount when Ring Mod is selected. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.freq_ring_mod.amount",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_Fine",
+      "friendly": "Engine 2 Fine",
+      "aliases": [
+        "wavetable.tune.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied shared Tune values; label is screenshot-verified. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "wavetable.tune.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_Fold",
+      "friendly": "Engine 2 Fold",
+      "aliases": [
+        "wavetable.wavefolding.fold",
+        "Fold",
+        "wavefodling fold knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.wavefolding.fold in the Pigments 7 master database. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.wavefolding.fold",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_FoldAmount",
+      "friendly": "Engine 2 Fold Mod",
+      "aliases": [
+        "wavetable.wavefolding.mod_amount",
+        "Fold Mod"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.wavefolding.mod_amount in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.wavefolding.mod_amount",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_FrameIndex",
+      "friendly": "Engine 2 Position",
+      "aliases": [
+        "wavetable.wave.position",
+        "Position"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range supplied by the user on 2026-07-27. The control label and presence were previously screenshot-verified. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.wave.position",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_KeyTrack",
+      "friendly": "Engine 2 Keyboard Tracking",
+      "aliases": [
+        "wavetable.tune.keyboard_tracking",
+        "Keyboard Tracking"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The Tune settings button is visible; this hidden setting is inherited provisionally from the supplied Tune data and awaits an open-settings screenshot. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "wavetable.tune.keyboard_tracking",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_WTOsc_MainVolume",
+      "friendly": "Engine 2 Wavetable Volume",
+      "aliases": [
+        "wavetable.wave.volume",
+        "Volume",
+        "Wavetable Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "The user wrote '70.0 to 0.00 dB'. The database stores '-70.0 to 0.00 dB', interpreting the omitted minus sign as a typo. The exact original wording is preserved in the source payload. Mapping status: platform_verified; conversion: display_db_curve_unverified.",
+      "source_control_id": "wavetable.wave.volume",
+      "mapping_status": "platform_verified",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_ModOscFine",
+      "friendly": "Engine 2 Fine",
+      "aliases": [
+        "wavetable.modulator.fine",
+        "Fine"
+      ],
+      "unit": "semitones",
+      "min": -1.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.modulator.fine in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: ui_semitone_curve_unverified.",
+      "source_control_id": "wavetable.modulator.fine",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "ui_semitone_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_ModOscVolume",
+      "friendly": "Engine 2 Volume",
+      "aliases": [
+        "wavetable.modulator.volume",
+        "Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.modulator.volume in the Pigments 7 master database. Mapping status: high_confidence_name_match; conversion: display_db_curve_unverified.",
+      "source_control_id": "wavetable.modulator.volume",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "display_db_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_Morph",
+      "friendly": "Engine 2 Morph",
+      "aliases": [
+        "wavetable.wave.morph",
+        "morph",
+        "Morph"
+      ],
+      "unit": "boolean",
+      "min": 0.0,
+      "max": 1.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Exact capitalization preserved from the visible button. Mapping status: high_confidence_name_match; conversion: binary.",
+      "source_control_id": "wavetable.wave.morph",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "binary"
+    },
+    {
+      "id": "Engine2_WTOsc_PDAmount",
+      "friendly": "Engine 2 Phase Transform Mod Amount",
+      "aliases": [
+        "wavetable.phase_transform.mod_amount",
+        "PW Mod",
+        "Phase Transform Mod Amount",
+        "phase transform PW Mod knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Current screenshot label reflects the selected Pulse Width transform. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.phase_transform.mod_amount",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_PMAmount",
+      "friendly": "Engine 2 Phase Mod",
+      "aliases": [
+        "wavetable.phase_mod.amount",
+        "Phase Mod"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.phase_mod.amount in the Pigments 7 master database. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.phase_mod.amount",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_Phase",
+      "friendly": "Engine 2 Phase",
+      "aliases": [
+        "wavetable.phase_mod.phase",
+        "Phase"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Mapped from wavetable.phase_mod.phase in the Pigments 7 master database. Mapping status: platform_verified; conversion: normalized_to_degrees.",
+      "source_control_id": "wavetable.phase_mod.phase",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_to_degrees"
+    },
+    {
+      "id": "Engine2_WTOsc_PhaseDist",
+      "friendly": "Engine 2 Phase Transform Amount",
+      "aliases": [
+        "wavetable.phase_transform.amount",
+        "Pulse Width",
+        "Phase Transform Amount",
+        "pulse width knob"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Current screenshot label reflects the selected Pulse Width transform. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.phase_transform.amount",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_UnisonDetune",
+      "friendly": "Engine 2 Detune",
+      "aliases": [
+        "wavetable.unison.detune",
+        "Detune"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied Unison values. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.unison.detune",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_UnisonStereo",
+      "friendly": "Engine 2 Stereo",
+      "aliases": [
+        "wavetable.unison.stereo",
+        "Stereo"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range inherited from the supplied Unison values. Mapping status: platform_verified; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.unison.stereo",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "Engine2_WTOsc_Unison_PhaseControl",
+      "friendly": "Engine 2 Phase",
+      "aliases": [
+        "wavetable.unison.phase",
+        "Phase"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Range supplied by the user on 2026-07-27. The control label and presence were previously screenshot-verified. Mapping status: high_confidence_name_match; conversion: normalized_curve_unverified.",
+      "source_control_id": "wavetable.unison.phase",
+      "mapping_status": "high_confidence_name_match",
+      "conversion_status": "normalized_curve_unverified"
+    },
+    {
+      "id": "FilterMix_Engine1FilterMix",
+      "friendly": "Engine 1 Filter Mix",
+      "aliases": [
+        "common.engine_output.filter_mix",
+        "Filter Mix"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Separate Filter Mix control for Engine 1, Engine 2, and Utility Engine. Screenshot verifies 0%=F1 and 100%=F2. Mapping status: platform_verified; conversion: normalized_linear.",
+      "source_control_id": "common.engine_output.filter_mix",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_linear"
+    },
+    {
+      "id": "FilterMix_Engine1Volume",
+      "friendly": "Engine 1 Engine Output Volume",
+      "aliases": [
+        "common.engine_output.volume",
+        "Volume",
+        "Engine Output Volume",
+        "Output Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Separate output-section Volume control for Engine 1, Engine 2, and Utility Engine. Mapping status: platform_verified; conversion: display_db_linear_approximation.",
+      "source_control_id": "common.engine_output.volume",
+      "mapping_status": "platform_verified",
+      "conversion_status": "display_db_linear_approximation"
+    },
+    {
+      "id": "FilterMix_Engine2FilterMix",
+      "friendly": "Engine 2 Filter Mix",
+      "aliases": [
+        "common.engine_output.filter_mix",
+        "Filter Mix"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Separate Filter Mix control for Engine 1, Engine 2, and Utility Engine. Screenshot verifies 0%=F1 and 100%=F2. Mapping status: platform_verified; conversion: normalized_linear.",
+      "source_control_id": "common.engine_output.filter_mix",
+      "mapping_status": "platform_verified",
+      "conversion_status": "normalized_linear"
+    },
+    {
+      "id": "FilterMix_Engine2Volume",
+      "friendly": "Engine 2 Engine Output Volume",
+      "aliases": [
+        "common.engine_output.volume",
+        "Volume",
+        "Engine Output Volume",
+        "Output Volume"
+      ],
+      "unit": "percent",
+      "min": 0.0,
+      "max": 100.0,
+      "curve": "linear",
+      "enum_values": {},
+      "description": "Separate output-section Volume control for Engine 1, Engine 2, and Utility Engine. Mapping status: platform_verified; conversion: display_db_linear_approximation.",
+      "source_control_id": "common.engine_output.volume",
+      "mapping_status": "platform_verified",
+      "conversion_status": "display_db_linear_approximation"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pigments_version": "7.0.1",
+  "operating_system": "macOS",
+  "engine": "Engine 1",
+  "section": "Sample / Bit Crush",
+  "ui_label": "Bit Depth",
+  "control_type": "knob",
+  "displayed_range": {
+    "minimum": 1.5,
+    "default": 16.0,
+    "maximum": 16.0,
+    "unit": "bits"
+  },
+  "enum_values": [],
+  "baseline": {
+    "preset_filename": "Before_BitDepth_16.pgtx",
+    "displayed_value": "16.0",
+    "screenshot": "Pigments_7.0.1_Engine1_Sample_BitDepth_16_01.png"
+  },
+  "changed": {
+    "preset_filename": "After_BitDepth_8.pgtx",
+    "displayed_value": "8.0",
+    "screenshot": "Pigments_7.0.1_Engine1_Sample_BitDepth_8_01.png"
+  },
+  "serialized_parameter_id": "",
+  "baseline_raw_value": "",
+  "changed_raw_value": "",
+  "mapping_confidence": "ui_only",
+  "notes": "Change no other control between saves.",
+  "content_rights_status": "user-created research preset"
+}
